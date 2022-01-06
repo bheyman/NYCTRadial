@@ -13,5 +13,4 @@ for index, station in data.iterrows():
   folium.Circle(location=[station['Station Latitude'],station['Station Longitude']], radius=804.672, fill_color='blue', color=None, fill_opacity=1.0).add_to(m)
 
 folium.Choropleth('https://raw.githubusercontent.com/dwillis/nyc-maps/master/boroughs.geojson', name="geojson", fill_color='transparent', line_weight=3, line_color='red').add_to(m)
-m.save('file.html')
-m
+m.save('NYCTRadial_map.html')
